@@ -1,0 +1,72 @@
+
+l1=[10,20,30,40]
+
+print(l1)
+l2=[30,50.0,"rahul",True]
+print(l2)
+
+print(l1[1:4:2])
+
+print(l1[::-1])
+
+l1.append(50)
+print(l1)
+l1.insert(1,25)
+print(l1)
+
+l=[1,2,3,4,5]
+print(l[0:5:1])
+l.reverse()
+print(l)
+l.sort()
+print(l)
+
+l1.extend((10,20,30))
+print(l1)
+
+print(l)
+l[1:5]=[5,15,25,35]
+print(l)
+l.pop()
+print(l)
+l.remove(25)
+print(l)
+list=l.copy()
+print(list)
+
+n=int(input("enter the size of list"))
+list=[]
+for i in range (n):
+    a=int(input("enter the elements"))
+    if(a%2==0):
+        list.append(a)
+print(list)
+
+list=[10,20,30,40]
+l1=[]
+for i in list:
+    l1.append(i+1)
+print(l1)
+
+#using split function even number
+user_input= input("enter the values")
+list=[]
+n=user_input.split()
+for number in n:
+    if(int(number)%2==0):
+        list.append(int(number))
+print(list)
+
+user_input=input("enter the values")
+list1=[]
+n=user_input.split()
+for number in n:
+    list.append(int(number))
+new_list=[]
+for i in list1:
+    new_list.append(i**3)
+print(list1)
+print(new_list)
+
+
+

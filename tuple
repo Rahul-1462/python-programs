@@ -1,0 +1,41 @@
+"""""
+tuples are imutable.once an element is added we cannot alter it
+once a tuple is created we cannot add insert or delete any element.
+tuple can contain duplicate elements
+functions:
+count
+min
+max
+index
+
+t=(10,20,30,40)
+t1=(10)
+#print(type(t1))
+#print(t1+t)
+#print(t[1])
+print(t[0:5:])
+i=1
+for item in t:
+    print(t[len(t)-i])
+    i+=1
+
+user=input("enter the values")
+tuple=()
+n=user.split()
+for item in n:
+
+    print(item)
+"""
+t1=(10,20,0)
+t2=(40,50,60)
+t3=(5,15)
+t=(t1,t2,t3)
+#for item in t:
+    #print(item)
+    #print("\n")
+print(t[0][1])
+print(min(t1))
+print(type(t1[1]))
+print(t1.count(10))
+l=[1,2,3,4]
+print(tuple(l))

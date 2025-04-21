@@ -1,0 +1,29 @@
+r={1:"ram",2:"shyam",3:"yesu",}
+#del r[1]
+#r.pop(2)
+#print(r.pop(2))
+#print(r.popitem())
+#print(r.keys())
+#print(r)
+#print(r.items()) #returns a list of tuple pairs
+#r1=r.copy()
+#print(r1)
+"""
+r["sai"]=[10,20,30]
+print(r)
+print(r["sai"][0])
+print(r.get(1))
+for i in r:
+    print(i,r[i])
+"""
+#problem
+d={
+    "rahul":91,
+    "ram": 81,
+    "sita":45,
+    "hanuman":57,
+}
+for i in d:
+    if(91<d[i]<100):
+        d[i]="A"
+print(d["rahul"])

@@ -1,0 +1,25 @@
+#game:rock papers and scissors
+import random
+a=int(input("enter your choice\n0.rock\n1.paper\n2.scissors\n"))
+list=[0,1,2]
+b=random.randint(0,2)
+if(a==0 and b==0):
+    print("its a draw")
+elif(a==0 and b==1):
+    print("you loose \n computer(paper)")
+elif(a==0 and b==2):
+    print("you win\n computer(scissors)")
+elif(a==1 and b==0):
+    print("you win \n computer(rock)")
+elif(a==1 and b==1):
+    print("its a draw")
+elif(a==1 and b==2):
+    print("you loose\n computer(scissors)")
+elif(a==2 and b==0):
+    print("you loose \n computer(rock)")
+elif(a==2 and b==1):
+    print("you win\n computer(paper)")
+elif(a==2 and b==2):
+    print("its a draw")
+else:
+    print("invalid input")

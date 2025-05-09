@@ -1,0 +1,20 @@
+from encodings.iso8859_4 import Codec
+
+
+class Rectangle:
+    def __init__(self,l,b):
+        self.length=l
+        self.breadth=b
+    def area(self):
+        return self.length*self.breadth
+
+class Cuboid(Rectangle):
+    def __init__(self,l,b,h):
+        self.height = h
+        super().__init__(l,b)#used to call parent constructor
+
+    def volume(self):
+        print(self.length * self.breadth * self.height)
+
+c1=Cuboid(5,10,15)
+c1.volume()

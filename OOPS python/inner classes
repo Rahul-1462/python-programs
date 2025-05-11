@@ -1,0 +1,33 @@
+class Cricket:
+    def __init__(self,name,age,test,odi,t20,avg,wickets,hundreds):
+        self.name=name
+        self.age=age
+        self.matches=Cricket.International(test,odi,t20)
+        self.numbers = Cricket.Stats(avg,hundreds,wickets)
+    class International:
+        def __init__(self,test,odi,t20):
+            self.test=test
+            self.odi=odi
+            self.t20=t20
+        def display(self):
+            print(self.test)
+            print(self.odi)
+            print(self.t20)
+
+    class Stats:
+        def __init__(self,avg,hundreds,wickets):
+            self.avg=avg
+            self.hundreds=hundreds
+            self.wickets=wickets
+        def display(self):
+            print(self.avg)
+            print(self.wickets)
+            print(self.hundreds)
+p=Cricket("kohli",36,112,296,116,51,9,77)
+ss=Cricket.International(111,222,134)
+#p.matches.display()
+#p.numbers.display()
+#international = Cricket.International(112, 296, 116)
+#international.display()
+kk=Cricket.Stats(57,90,11)
+kk.display()

@@ -1,0 +1,15 @@
+class Rectangle:
+    def __init__(self,l,b):
+        print(id(self))
+        self.length=l
+        self.breadth=b
+    def area(self):
+        return 2*(self.length*self.breadth)
+    def get_length(self):
+        return self.length
+    def set_length(self,l):
+        self.length=l
+
+c1=Rectangle(10,2)
+print(c1.set_length(22))#updating length
+print(c1.get_length())#reading length

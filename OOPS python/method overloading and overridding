@@ -1,0 +1,20 @@
+#Method overloading
+class Add:
+    def sum(self,a,b):
+        return a+b
+a=Add()
+print(a.sum(10,20))
+print(a.sum("rahul ","reddy"))
+
+# method overridding
+class Iphone6:
+    def home(self):
+        print("home press")
+class Iphone(Iphone6):
+    def home(self):
+        print("home is touch")
+        super().home()#use this to call parent class method
+i6=Iphone6()
+i6.home()
+i10=Iphone()
+i10.home()
